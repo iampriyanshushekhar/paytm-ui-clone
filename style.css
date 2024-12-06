@@ -1,0 +1,873 @@
+* {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px , 0em 0.5em 1em #00000027;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-logo {
+    margin-left: 10rem;
+  }
+
+  .nav-content {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: space-evenly;
+    color: #344341;
+    margin-right: 2rem;
+  }
+
+  .nav-content div {
+    margin: 0 1rem;
+  }
+
+  .nav-sign-in {
+    display: flex;
+    background-color: #00baf2;
+    height: 2.45rem;
+    width: 7.5rem;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 12rem;
+  }
+
+  .sign-in-text {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 0 0 1.2rem;
+  }
+
+  .sign-in-logo {
+    padding: 0.25rem 0.2rem 0.1rem 0rem;
+  }
+
+  .travel-main {
+    background-color: #E0F5FD;
+    height: 42rem;
+    width: 100%;
+  }
+
+  .travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+  }
+
+  .transport {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+  }
+
+  .transport-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 3rem;
+    color: #101010;
+    width: 26vw;
+    font-weight: 400;
+  }
+
+  .flight {
+    display: flex;
+    align-items: center;
+  }
+
+  .bus {
+    display: flex;
+    align-items: center;
+  }
+
+  .train {
+    display: flex;
+    align-items: center;
+  }
+
+  .intl-flight {
+    display: flex;
+    align-items: center;
+  }
+
+  .transport-section img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .paytm-travel img {
+    width: 140px;
+    height: 21px;
+    margin-top: 3rem;
+  }
+
+  .small-line {
+    height: 0.15rem;
+    width: 5rem;
+    background-color: #00BAF2;
+    align-self: flex-start;
+    margin-top: 0.7rem;
+  }
+
+  .journey {
+    width: 80vw;
+    height: 14rem;
+    background-color: #FFFFFF;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trip {
+    display: flex;
+    margin-top: 01rem;
+    margin-left: 2rem;
+  }
+
+  .trip input{
+    accent-color: #00b9f5;
+    border: 2px solid #00b9f5;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+  }
+
+  .trip label {
+    margin-left: 0.5rem;
+  }
+
+  .one-way {
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+  }
+
+  .round-trip {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 2rem;
+  }
+
+  .journey-planner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+
+  .from {
+    width: 11rem;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .paragraph {
+    font-size: 12px;
+  }
+
+  .bold {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .add-return {
+    width: 9rem;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .add-return .bold {
+    font-size: 18px;
+    font-weight: 600;
+    color: #00BAF2;
+  }
+
+  .date {
+    width: 9rem;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .traveller {
+    width: 10rem;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .To {
+    width: 11rem;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .search button {
+    color: white;
+    background-color: #00BAF2;
+    font-size: 16px;
+    font-weight: 600;
+    height: 3.3rem;
+    width: 11rem;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .special-fare {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    width: 35rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: hsla(0, 0%, 6%, .54);
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .circle {
+    border: 1px solid hsla(0,0%,6%,.13);
+    border-radius: 50px;
+    padding: 7px 12px;
+  }
+
+  .journey-offers {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+  }
+
+  .journey-offer1 img {
+    height: 14rem;
+    width: 24rem;
+    border-radius: 12px;
+  }
+
+  .recharge-main{
+    background-color: #00BAF2;
+    width: 100%;
+  }
+
+  .recharge {
+    height: 23rem;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .recharge h1 {
+    color: white;
+    font-size: 40px;
+  }
+
+  .recharge-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recharge-section div {
+    background-color: #00BAF2;
+    padding-left: 0.75rem;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 9rem;
+    height: 11.5rem;
+  }
+
+  .recharge-section div:hover {
+    background-color: #00AFE3;
+  }
+
+  .recharge-section img {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+  }
+
+  .recharge-section p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5rem;
+  }
+
+  .app-main {
+    background-color: white;
+    height: 42rem;
+    width: 100%;
+  }
+
+  .paytm-app {
+    display: flex;
+    height: 42rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .paytm-app-info {
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .paytm-app-logo img {
+    height: 5rem;
+    width: 5rem;
+    box-shadow: 0 5px 20px rgba(0, 41, 112, .1);
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .paytm-app-des h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 65px;
+    width: 475px;
+    margin-bottom: 0px;
+  }
+
+  .paytm-app-des p {
+    width: 445px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .download-btn {
+    padding: 0 24px;
+    height: 44px;
+    width: max-content;
+    font-size: 15px;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 1;
+    margin-bottom: 4rem;
+    cursor: pointer;
+  }
+  
+  .download-btn svg {
+    margin-left: 1rem;
+  }
+
+  .app-preview img {
+    height: 30rem;
+    width: 33rem;
+  }
+
+  .book-buy-main{
+    background-color: #0F4A8A;
+    width: 100%;
+  }
+
+  .book-buy {
+    height: 23rem;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .book-buy h1 {
+    color: white;
+    font-size: 40px;
+  }
+
+  .book-buy-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .book-buy-section div {
+    background-color: #0F4A8A;
+    padding-left: 0.75rem;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .book-buy-section div:hover {
+    background-color: #0D3E80;
+  }
+
+  .book-buy-section img {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+  }
+
+  .book-buy-section p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5rem;
+  }
+
+  .payment-main {
+    background-color: #F5F7FA;
+    height: 113rem;
+  }
+
+  .payment-section {
+    margin: auto;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paytm-payment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paytm-payment>h1 {
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
+
+  .paytm-upi-section {
+    width: 75vw;
+    background-color: white;
+    display: flex;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
+  .paytm-upi {
+    width: 38%;
+    padding-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .paytm-upi h1 {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+
+  .upi-text {
+    padding: 24px 0 30px;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .paytm-upi img {
+    height: 5rem;
+    width: auto;
+    padding-right: 12px;
+  }
+
+  .upi-des {
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .paytm-upi-img {
+    margin-left: 2rem;
+  }
+
+  .paytm-upi-img img{
+    width: 34rem;
+    height: 29rem;
+  }
+
+  .credit-card {
+    display: flex;
+    align-items: center;
+    width: 77.5vw;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  .hdfc-bank {
+    width: 39.5%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 100px 50px 0 50px;
+  }
+
+  .hdfcbank-img img {
+    width: auto;
+    height: 5rem;
+  }
+
+  .hdfc-card-img img {
+    width: auto;
+    height: 19rem;
+  }
+
+  .hdfc-bank h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .sbicard {
+    width: 39.5%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 100px 50px 0 50px;
+  }
+
+  .sbicard h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .sbicard-img img{
+    width: 12rem;
+    height: 1.3rem;
+    padding-top: 3.7rem;
+  }
+
+  .credit-card-p1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .credit-card-p2 {
+    font-size: 12px;
+    color: #75767f;
+    font-weight: 500;
+    line-height: 18px;
+    padding-top: 0.5rem;
+  }
+
+  .credit-card-p2 a {
+    text-decoration: none;
+    color: #00baf2;
+    cursor: pointer;
+    margin-left: 4px;
+    font-weight: bold;
+  }
+
+  .paytm-insurance-section {
+    background-color: white;
+  }
+
+  .paytm-insurance {
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  .paytm-insurance-img img {
+    height: 3.5rem;
+  }
+
+  .insurance-des {
+    margin-top: 2rem;
+  }
+
+  .insurance-des h1 {
+    font-size: 40px;
+    padding-top: 0.5rem;
+  }
+
+  .insurance-img img {
+    height: 25rem;
+  }
+
+  .credit-card-p3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .learn-btn {
+    background: #002970;
+    padding: 16px 24px;
+    border-radius: 25px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 2rem;
+  }
+
+  .paytm-money-section {
+    background-image: url(./assets/background-img.png); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F5F7FA;
+  }
+
+  .paytm-money {
+    display: flex;
+    width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
+  .paytm-money-pre img {
+    height: 27rem;
+  }
+
+  .paytm-mooney-des {
+    margin-right: 2rem;
+  }
+
+  .paytm-mooney-des h1 {
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .credit-card-p4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .paytm-loan-section {
+    background-color: white;
+  }
+
+  .paytm-loan-content {
+    width: 75vw;
+    margin: auto;
+  }
+
+  .paytm-loan-content>h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 8rem;
+  }
+
+  .paytm-loan {
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  .paytm-loan-img img {
+    height: 4.2rem;
+  }
+
+  .loan-des h1 {
+    font-size: 42px;
+    padding-top: 1.5rem;
+  }
+
+  .loan-img img {
+    height: 29rem;
+  }
+
+  .loan-card-p3 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer {
+    /* display: flex; */
+    background-color: #F5F7FA;
+  }
+
+  .blue-rectangle {
+    background: #00baf2;
+    height: 0.8rem;
+  }
+
+  .darkblue-rectangle {
+    background: #002970;
+    height: 0.8rem;
+  }
+
+  .footer-content {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .download-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .store {
+    display: flex;
+    align-items: center;
+  }
+
+  .store-des {
+    width: 230px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .store-img {
+    margin-left: 0.5rem;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10rem;
+  }
+
+  .h-line {
+    margin-top: 4rem;
+  }
+
+  .h-line div {  
+    border-bottom: 1px solid #ccc;
+  }
+
+  .footer-nav {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+  
+  .footer-nav-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  .plus-des {
+    width: max-content;
+    margin-right: auto;
+  }
+
+  .hori-line {
+    width: 87%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  .hori-line1 {
+    width: 92%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  .hori-line2 {
+    width: 96%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  .hori-line3 {
+    width: 86.2%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  .hori-line4 {
+    width: 69%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  .hori-line5 {
+    width: 81.5%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  .hori-line6 {
+    width: 84.5%;
+    height: 0.02rem;
+    background-color: #ccc;
+    align-self: self-end;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #00baf2; 
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+   background: #fff;
+   border-radius: 6px;
+  }
